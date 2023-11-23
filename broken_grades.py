@@ -21,42 +21,36 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = int(input("Input exam grade two: ")) #type of input data (integer)
+exam_two = int(input("Input exam grade two: "))#type of input data
 
-exam_three = int(input("Input exam grade three: ")) #type of input data (integer) and 3 changed to "three"
+exam_three = int(input("Input exam grade three: "))#type of input data and "3" changed to "three; str changed to int"
 
-grades = [exam_one, exam_two, exam_three] #commas to separate the input variables
+grades = [exam_one, exam_two, exam_three]
 sum = 0
-for grade in grades: #"grade" changed to "grades"
+for grade in grades:#grade changed to grades
   sum = sum + grade
 
-avg = sum / len(grades) #mispell
+avg = sum / len(grades)#grdes changed to grades
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90: #colon added
+elif avg >= 80 and avg < 90:#colon added
     letter_grade = "B"
 elif avg > 69 and avg < 80:
     letter_grade = "C" #double quotes added
 elif avg <= 69 and avg >= 65:
     letter_grade = "D"
-else: #elif changed to else as it is the last option
+else:#elif changed to else
     letter_grade = "F"
 
 for grade in grades:
-    print("Exam: " + str(grades))
+    print("Exam: " + str(grades))#changed grade to grades
 
     print("Average: " + str(avg))
 
-    print("Grade: " + str(letter_grade))
-    break #break is added to exit the loop
-
-if letter_grade is "F": #hyphen changed to underscore
-    print ("Student is failing.") #brackets added
+    print("Grade: " + str(letter_grade))#added str
+    break #break is added to exit loop
+if letter_grade is "F":
+    print ("Student is failing.")#brackets added
 else:
-
-
-
-    asdlasd;laf
-    aldjf;lajd;ajdf
-    ajf;jafs
+    print ("Student is passing.")#brackets added
